@@ -1,6 +1,6 @@
-package hello.dao;
+package lootweb.dao;
 
-import hello.dto.Greeting;
+import lootweb.domain.Greeting;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

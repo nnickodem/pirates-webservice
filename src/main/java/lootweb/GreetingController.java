@@ -1,7 +1,7 @@
-package hello;
+package lootweb;
 
-import hello.dao.GreetingsDAO;
-import hello.dto.FormInput;
+import lootweb.dao.GreetingsDAO;
+import lootweb.dto.FormInput;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

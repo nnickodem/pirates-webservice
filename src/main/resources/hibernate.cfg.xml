@@ -7,11 +7,13 @@
 
     <session-factory>
         <property name="hbm2ddl.auto">update</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/sys</property>
-        <property name="connection.username">website</property>
-        <property name="connection.password">weblogin</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/lootz</property>
+        <property name="connection.username">looter</property>
+        <property name="connection.password">crazyL00t</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.dialet">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class ="lootweb.domain.Boss"/>
+        <mapping class ="lootweb.domain.Loot"/>
         <mapping class ="hello.dto.Greeting"/>
     </session-factory>
 

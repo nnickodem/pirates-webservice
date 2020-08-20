@@ -1,4 +1,4 @@
-package hello.dto;
+package lootweb.dto;
 
 public class FormInput {
 

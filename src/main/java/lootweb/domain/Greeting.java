@@ -1,4 +1,4 @@
-package hello.dto;
+package lootweb.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
