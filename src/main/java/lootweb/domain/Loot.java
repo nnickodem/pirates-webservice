@@ -1,24 +1,18 @@
 package lootweb.domain;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import lootweb.domain.Boss;
 
 @Entity
 @Table(name = "loots")
 public class Loot {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "session_id", length = 11, nullable = false, unique = true)
-    private Integer sessionId;
+    @EmbeddedId
+    private LootId lootId;
 
     @Column(name = "user", length = 20, nullable = false)
     private String user;
@@ -45,12 +39,12 @@ public class Loot {
     @Column(name = "legendary_count", length = 11, nullable = false)
     private Integer legendaryCount;
 
-    public Integer getSessionId() {
-        return sessionId;
+    public LootId getLootId() {
+        return lootId;
     }
 
-    public void setSessionId(Integer sessionId) {
-        this.sessionId = sessionId;
+    public void setLootId(final LootId lootId) {
+        this.lootId = lootId;
     }
 
     public String getUser() {

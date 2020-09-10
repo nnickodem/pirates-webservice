@@ -14,7 +14,7 @@
         <property name="hibernate.dialet">org.hibernate.dialect.MySQLDialect</property>
         <mapping class ="lootweb.domain.Boss"/>
         <mapping class ="lootweb.domain.Loot"/>
-        <mapping class ="hello.dto.Greeting"/>
+        <mapping class ="lootweb.domain.Greeting"/>
     </session-factory>
 
 </hibernate-configuration>

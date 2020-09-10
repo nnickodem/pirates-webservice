@@ -2,30 +2,12 @@ package lootweb.dto;
 
 public class Loot {
 
-    private String user;
-    private Integer bossId;
     private Integer killCount;
     private Integer crudeCount;
     private Integer commonCount;
     private Integer rareCount;
     private Integer famedCount;
     private Integer legendaryCount;
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public Integer getBossId() {
-        return bossId;
-    }
-
-    public void setBossId(Integer bossId) {
-        this.bossId = bossId;
-    }
 
     public Integer getKillCount() {
         return killCount;
@@ -73,5 +55,17 @@ public class Loot {
 
     public void setLegendaryCount(Integer legendaryCount) {
         this.legendaryCount = legendaryCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Loot{" +
+                "killCount=" + killCount +
+                ", crudeCount=" + crudeCount +
+                ", commonCount=" + commonCount +
+                ", rareCount=" + rareCount +
+                ", famedCount=" + famedCount +
+                ", legendaryCount=" + legendaryCount +
+                '}';
     }
 }
